@@ -17,11 +17,13 @@
 
 ```json
 {
+  "user_id": "string",
   "transaction_id": "string",
   "product_id": "string"
 }
 ```
 
+- user_id: 本来は Cookie 等から取得する値だが、今回わかりやすくするためパラメータとして渡す形にする。検証不要
 - transaction_id: サブスクリプションを一意に識別する ID。同じサブスクリプションなら自動更新されても同じ値
 - product_id: サブスクリプションプランの ID。例：com.samansa.subscription.monthly
 
